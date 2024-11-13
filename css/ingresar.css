@@ -1,0 +1,93 @@
+header {
+    text-align: center;
+    padding: 25px;
+    margin: 7px;
+    background-color: blanchedalmond;
+}
+
+.intoputo {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.intoputo input {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid rgba(231, 44, 44, 0.829);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.intoputo label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(100%);
+    color: gray;
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.intoputo input:focus + label, .intoputo input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: black;
+}
+
+form {
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Añadir estilos específicos para cuando está enfocado */
+input:focus + label {
+    font-size: 12px;
+    top: 0;
+    color: #333;
+}
